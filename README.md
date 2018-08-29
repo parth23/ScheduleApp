@@ -8,6 +8,13 @@ Run `npm install` for installing all dependencies packges.
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Screenshots:
+## 1. Month View:
+![Month View](https://github.com/parth23/ScheduleApp/blob/master/screenshots/Month%20view.png?raw=true)
+
+## 2. Week view:
+![Week View](https://github.com/parth23/ScheduleApp/blob/master/screenshots/Week%20view.png?raw=true)
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
