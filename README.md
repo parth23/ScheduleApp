@@ -1,4 +1,4 @@
-# PrimeNG Angular-CLI
+# Employee Shift Scheduling APP
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.
 
