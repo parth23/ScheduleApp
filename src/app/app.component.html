@@ -1,0 +1,45 @@
+<!--begin::Form-->
+<div class="ui-g">
+    <!-- <form [formGroup]="form" autocomplete="off" novalidate> -->
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-g-4">
+            Number of Employee
+        </div>
+        <div class="ui-g-8">
+            <input [(ngModel)]="NumberOfEmployee" pInputText type="number" />
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-g-4">
+            Select Date Range
+        </div>
+        <div class="ui-g-8">
+            <p-calendar [(ngModel)]="DateRange" selectionMode="range" [readonlyInput]="true" [monthNavigator]="true" [yearNavigator]="true"
+                yearRange="2000:2030"></p-calendar>
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-4">
+        <div class="ui-g-4">
+            Select Weekend
+        </div>
+        <div class="ui-g-8">
+            <select [(ngModel)]="Weekend">
+                <option value=1 selected>Saturday/Sunday</option>
+                <option value=2 >Sunday</option>
+            </select>
+        </div>
+    </div>
+    <div class="ui-g-12 ui-md-2">
+        <div class="ui-g-4">
+            <button pButton type="button" (click)="onSchedule()" label="Schedule" class="ui-button-raised"></button>
+        </div>
+    </div>
+
+    
+    <!-- </form> -->
+</div>
+<!--end::Form-->
+
+<div id='container' >
+    <p-schedule [events]="events" [timeFormat]="'h:mm a'" [header]="headerConfig"></p-schedule>
+</div>
